@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: #6f42c1; }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+
+
+
+
+
+#navbar_menutopo {
+  background-color:var(--top-color);
+  width: calc(100% + 30px);
+  height: 40px;
+  padding: 0px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow-x:auto;
+  padding-left:100px;
+  position: relative;
+  z-index:101;
+}
+#navbar_menutopo ul {
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+#navbar_menutopo ul li {
+  float: left;
+  margin-right: 15px;
+  padding-top:2px;
+}
+#navbar_menutopo ul li a {
+  color: #FFF;
+}
+#navbar_menutopo ul li .clicado {
+  color: red;
+}
+#navbar_menutopo #areaIcones {
+  padding-top: 10px;
+  padding-left:50px;
+}
+#navbar_menutopo .icone .texto {
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 800;
+}
+#navbar_menutopo .icone {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+#navbar_menutopo .linha:last-of-type .icone {
+border:none;
+}
+@media screen and (min-width: 768px) {
+#navbar_menutopo .icone {
+    width: 95px;
+}
+#navbar_menutopo .icone img {
+  margin-top: 0px;
+}
+.navbar_contentMenu {
+  background-color: #676767;
+  width: 256px;
+  height: 300px;
+  position: fixed;
+  z-index: 99999;
+  overflow-y: auto;
+  display:none;
+}
+
+@media screen and (max-width:767px) {
+  .nav-li-print, .nav-li-addWindow {
+    display:none !important;
+  }
+}
+
+
+tr.selecionado{
+   background-color: cyan;
+   color:white;
+}
+
+input#qtd{
+   width: 100px;
+}
+
+a#a{
+  color:#fff;
+  text-decoration: none;
+}
+
+a#a:hover{
+  background-color: #cecece;
+  color: white;
+}
+
+
+tbody tr.selecionado{
+  background-color: cyan;
+  color:black;
+}
+
+b.centro{
+  text-align: center;
+  margin-left: 250px; 
+}
+
+input#ler{
+  background-color: #8e8e8e;
+  color: black;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+
+
+div#t{
+   width: 700px;
+   margin-right:40px; 
+}
+div#c{
+   width: 700px;
+}
+
+
+input#qtd{
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.8);
+  width: 665px;
+}
+
+div.center{
+   margin-top: -50px;
+   margin-left: 100px;
+   margin-right: 100px;  
+   border: solid 1px white;
+   height: 600px;
+   padding:50px;
+   box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+div.mensagens{
+   font-family: 'Poiret One', cursive;
+   font-size: 20pt;
+   margin-top: 30px;
+   margin-left: 100px;
+   margin-right: 100px;  
+   border: solid 1px white;
+   padding:50px;
+   padding-top: 10px;
+   color:#cecece;
+   text-align: center;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+
+
+div.esq{
+   margin-left: 700px;
+}
+
+
+div#botao{
+  margin-left: 40%;
+   margin-right: 40%;  
+}
+
+
+div.sair{
+   float: right;
+}
+p#msg{
+  font-family: 'Lobster', cursive;
+}
+
+
